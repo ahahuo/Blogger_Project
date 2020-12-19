@@ -158,12 +158,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="wd@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -183,6 +178,7 @@
       <workItem from="1608358606314" duration="357000" />
       <workItem from="1608358988305" duration="25000" />
       <workItem from="1608359066838" duration="6950000" />
+      <workItem from="1608378104443" duration="87000" />
     </task>
     <servers />
   </component>
