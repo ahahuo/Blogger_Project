@@ -9,9 +9,18 @@ public class User {
     private String user_email;
     private String user_profile_photo;
     private int user_age;
-    private Date user_birthday;
+    private String user_sex;
+    private String user_birthday;
     private boolean is_delete;
     private boolean is_root;
+
+    public String getUser_sex() {
+        return user_sex;
+    }
+
+    public void setUser_sex(String user_sex) {
+        this.user_sex = user_sex;
+    }
 
     public int getUser_id() {
         return user_id;
@@ -61,11 +70,11 @@ public class User {
         this.user_age = user_age;
     }
 
-    public Date getUser_birthday() {
+    public String getUser_birthday() {
         return user_birthday;
     }
 
-    public void setUser_birthday(Date user_birthday) {
+    public void setUser_birthday(String user_birthday) {
         this.user_birthday = user_birthday;
     }
 
