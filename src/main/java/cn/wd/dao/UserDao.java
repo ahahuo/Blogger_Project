@@ -4,7 +4,7 @@ import cn.wd.utils.jdbcUtil;
 import cn.wd.model.User;
 
 import java.sql.*;
-import java.text.SimpleDateFormat;
+
 
 public class UserDao {
     //添加用户
@@ -148,6 +148,32 @@ public class UserDao {
             jdbcUtil.release(rs,prestmt,conn);
         }
         return null;
+    }
+
+    //登录处理
+    public String getLogin(String user_email){
+        Connection conn=null;
+        PreparedStatement prestmt=null;
+        ResultSet rs=null;
+        try {
+            conn = jdbcUtil.getConnection();
+            String sql = "select user_password from users where user_email=?";
+            prestmt = conn.prepareStatement(sql);
+            prestmt.setString(1,user_email);
+            rs = prestmt.executeQuery();
+
+            if (rs.next()) {
+                return rs.getString("user_password");
+            } else {
+                System.out.println("null");
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            jdbcUtil.release(rs,prestmt,conn);
+        }
+        return "检索出错";
     }
 
 }

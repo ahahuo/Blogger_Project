@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Comment {
     private int comment_id;
-    private int user_id;
+    private int comment_name;
     private int article_id;
     private int comment_like_count;
     private Date comment_date;
@@ -18,12 +18,12 @@ public class Comment {
         this.comment_id = comment_id;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public int getComment_name() {
+        return comment_name;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setComment_name(int comment_name) {
+        this.comment_name = comment_name;
     }
 
     public int getArticle_id() {

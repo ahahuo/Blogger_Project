@@ -9,7 +9,7 @@ public class Article {
     private String article_content;
     private int article_views;
     private int article_comment_count;
-    private Date article_date;
+    private String article_date;
     private int article_like_count;
     private boolean is_delete;
 
@@ -61,11 +61,11 @@ public class Article {
         this.article_comment_count = article_comment_count;
     }
 
-    public Date getArticle_date() {
+    public String getArticle_date() {
         return article_date;
     }
 
-    public void setArticle_date(Date article_date) {
+    public void setArticle_date(String article_date) {
         this.article_date = article_date;
     }
 
@@ -77,7 +77,7 @@ public class Article {
         this.article_like_count = article_like_count;
     }
 
-    public boolean isIs_delete() {
+    public boolean getIs_delete() {
         return is_delete;
     }
 

@@ -1134,7 +1134,6 @@
     <column id="287" parent="282" name="user_id">
       <Position>2</Position>
       <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="288" parent="282" name="article_title">
@@ -1152,30 +1151,29 @@
     <column id="290" parent="282" name="article_views">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="291" parent="282" name="article_comment_count">
       <Position>6</Position>
       <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="292" parent="282" name="article_date">
       <Position>7</Position>
-      <DataType>datetime|0s</DataType>
+      <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="293" parent="282" name="article_like_count">
       <Position>8</Position>
       <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="294" parent="282" name="is_delete">
       <Position>9</Position>
       <DataType>tinyint(1)|0s</DataType>
-      <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1191,9 +1189,9 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="283" name="user_id">
+    <column id="297" parent="283" name="comment_name">
       <Position>2</Position>
-      <DataType>int|0s</DataType>
+      <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
