@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Blogger_Project:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Blogger_Project_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Blogger_Project" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.48" />
+          <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.2" />
+          <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.11" />
+          <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.6" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.47" />
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="library" level="project" name="Java EE 6-Java EE 6" />
+      <element id="javaee-facet-resources" facet="Blogger_Project/web/Web" />
+    </root>
+  </artifact>
+</component>

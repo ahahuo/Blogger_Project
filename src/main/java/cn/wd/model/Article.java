@@ -12,6 +12,19 @@ public class Article {
     private String article_date;
     private int article_like_count;
     private boolean is_delete;
+    private String sort_name;
+
+    public boolean isIs_delete() {
+        return is_delete;
+    }
+
+    public String getSort_name() {
+        return sort_name;
+    }
+
+    public void setSort_name(String sort_name) {
+        this.sort_name = sort_name;
+    }
 
     public int getArticle_id() {
         return article_id;
